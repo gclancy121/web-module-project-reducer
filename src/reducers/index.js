@@ -23,7 +23,8 @@ const calculateResult = (num1, num2, operation) => {
         case("-"):
             return num1 - num2;
         case('/'):
-            return num1 / num2;
+            const integer = (num1 / num2);
+            return Math.round(integer * 100)/100
     }
 }
 

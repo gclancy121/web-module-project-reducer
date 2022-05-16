@@ -83,13 +83,14 @@ function App() {
 
             <div className="row">
               <CalcButton onClick={() => {handleOperation('+')}} value={"+"}/>
+              <CalcButton onClick={() => {handleOperations(0)}} value={0}/>
               <CalcButton onClick={() => {handleOperation('*')}} value={"*"}/>
-              <CalcButton onClick={() => {handleOperation('-')}} value={"-"}/>
-              {/* <CalcButton onClick={() => {handleOperation('/')}} value={'/'}/> */}
             </div>
 
-            <div className="row ce_button">
-              <CalcButton onClick={() => {clearDisplay()}}value={"CE"}/>
+            <div className='row'>
+            <CalcButton onClick={() => {handleOperation('-')}} value={"-"}/>
+            <CalcButton onClick={() => {clearDisplay()}}value={"CE"}/>
+            <CalcButton onClick={() => {handleOperation('/')}} value={'/'}/>
             </div>
 
           </form>
